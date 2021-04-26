@@ -1,0 +1,28 @@
+ MAVEN - build automation tool.
+ For testers it used:
+
+ 1. Create a project sturcture (test/java --> java related code
+                                test/resources --> resources we used to test
+ 2. manage project dependencies
+ pom.xml - configuration file for maven projects
+
+maven.apache.org == > here we can read all about Maven
+
+compiler = tells us which Java version we use
+ <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+
+io.github.bonigarcia  = automatically updates google or firefox version
+<dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>4.2.2</version>
+        </dependency>
+
+     Target folder == > will store all the outcomes of runtests
+
+     System.getProperty("user.dir"); ==>
+     (C:/Users/drysa/IdeaProjects/TestNGFrameworkNew) = returns directory path from which JMV gets executed
